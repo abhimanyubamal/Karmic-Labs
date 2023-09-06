@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Sunflower:wght@300;500;700&display=swap');
+
+* {
+    text-decoration: none !important;
+    list-style-type: none !important;
+}
+
+.bg-lines {
+    background: url("../images/bg-total.png");
+    z-index: 2 !important;
+}
+
+.bg-hero {
+    /* background: url("../images/hero-section-background-image.png"); */
+    /* position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.bg-section-2 {
+    background: url("../images/bg-section-2.png");
+    position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-1-card {
+    border: 1px solid #FFFFFF1A;
+    box-shadow: 0px -1px 20px 0px #FFFFFF1A;
+    background: #1E1E1E;
+    border-radius: 12px;
+    padding: 16px;
+    position: relative;
+    z-index: 3 !important;
+}
+
+#section-1-cards img {
+    border-radius: 12px;
+}
+
+.section-2-card {
+    padding: 20px;
+    border-radius: 12px;
+    border: none;
+    z-index: 3;
+}
+
+.section-2-card:hover {
+    background: #FFFFFF1A;
+    box-shadow: 0px 4px 20px 0px #00000026;
+    backdrop-filter: blur(16px);
+}
+
+#section-2-cards img {
+    border-radius: 12px;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    transition: all 200ms linear;
+}
+
+#section-2-cards>div:hover {
+    z-index: 3;
+    transform: scale(1.3);
+}
+
+.font-sunflower {
+    font-family: 'Sunflower', sans-serif;
+}
+
+.font-grotesk {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.font-weight-700 {
+    font-weight: 700;
+}
+
+.font-weight-500 {
+    font-weight: 500;
+}
+
+.font-weight-400 {
+    font-weight: 400;
+}
+
+.font-weight-300 {
+    font-weight: 300;
+}
+
+.font-size-16 {
+    font-size: 16px;
+}
+
+.font-size-20 {
+    font-size: 20px;
+}
+
+.font-size-56 {
+    font-size: 56px;
+}
+
+.font-size-64 {
+    font-size: 64px;
+}
+
+.menu a:hover {
+    font-weight: 700;
+}
+
+.nav-button {
+    padding: 12px 32px;
+    border-radius: 82px;
+    border: none;
+    background-color: white;
+    transition: all 200ms linear;
+}
+
+.nav-button:hover {
+    font-weight: 700;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.hero-button {
+    padding: 12px 24px;
+    border-radius: 82px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    transition: all 200ms linear;
+}
+
+.hero-button:hover {
+    background-color: white;
+    color: black;
+    font-weight: 700;
+}
+
+.hero-button:hover svg>path {
+    fill: black;
+}
+
+.section-button-1 {
+    width: 13% !important;
+    padding: 12px 32px;
+    border-radius: 82px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    transition: all 200ms linear;
+}
+
+.section-button-1:hover {
+    color: black;
+    background-color: white;
+}
+
+.section-button-2 {
+    width: 13% !important;
+    padding: 12px 32px;
+    border-radius: 82px;
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+    transition: all 200ms linear;
+}
+
+.section-button-2:hover {
+    background-color: black;
+    color: white;
+}
+
+.white-ball {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.support-text {
+    position: absolute;
+    box-shadow: 0px -1px 11px 0px #FFFFFF1A;
+    padding: 8px;
+    bottom: 0;
+    left: 4%;
+    right: 4%;
+    background: #FFFFFF4D;
+    display: none;
+    transition: all 200ms linear;
+}
+
+#section-2-cards>div:hover .support-text {
+    display: block;
+}
+
+#section-2-cards>div {
+    transition: all 200ms linear;
+}
+
+.svg-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.svg-web3-top {
+    position: absolute;
+    top: 0;
+    left: 65%;
+    transform: translateX(-50%);
+}
+
+.svg-web3-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.white-line {
+    position: absolute;
+    background-color: white;
+    left: 0;
+    right: 0;
+    height: 1px;
+    bottom: 38px;
+}
+
+.slide-wrapper {
+    padding: 12px;
+}
+
+.slide-wrapper img {
+    border-radius: 12px !important;
+    overflow: hidden;
+}
+
+.svg-icon:hover {
+    transform: scale(1.3);
+}
+
+.hero-image{
+    position: absolute;
+    width: 60%;
+    right: 10%;
+    bottom: 0;
+}
+
+@media (max-width: 1200px) {
+    .font-size-max-xl-48{
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 992px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        top: -100%;
+        left: 0;
+        background-color: red;
+    }
+
+    .nav-button {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        justify-content: end;
+        gap: 20px;
+        align-items: center;
+        top: -100%;
+        left: 0;
+    }
+
+    label {
+        position: relative;
+        height: 20px !important;
+        float: right;
+        width: 20px !important;
+        z-index: 5 !important;
+    }
+
+    label>span {
+        content: "";
+        position: relative;
+        top: 0;
+        width: 20px;
+        height: 3px !important;
+        background-color: white;
+        z-index: 5 !important;
+        display: block;
+
+    }
+
+    label>span::before {
+        position: absolute;
+        top: -6px;
+        content: "";
+        height: 3px;
+        width: 20px;
+
+        background-color: white;
+        z-index: 5 !important;
+    }
+
+    label>span::after {
+        position: absolute;
+        top: 6px;
+        height: 3px;
+        width: 20px;
+        content: "";
+        background-color: white;
+        z-index: 5 !important;
+    }
+
+    .col-max-lg-4{
+        width: 33.33% !important;
+    }
+
+    .white-ball{
+        top: 50%;
+        left: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .col-max-md-6{
+        width: 50% !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-max-sm-12{
+        width: 100% !important;
+    }
+}
