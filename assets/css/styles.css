@@ -164,6 +164,11 @@
     background-color: white;
 }
 
+.mt-footer {
+    margin-top: 173px !important;
+    margin-bottom: 69px !important;
+}
+
 .section-button-2 {
     width: 13% !important;
     padding: 12px 32px;
@@ -254,12 +259,17 @@
     height: 100%;
 }
 
+.footer-icon {
+    width: 28% !important;
+    transition: all 1000ms linear;
+}
+
 @media (max-width: 1200px) {
     .font-size-max-xl-48 {
         font-size: 48px;
     }
 
-    .font-size-max-xl-42{
+    .font-size-max-xl-42 {
         font-size: 42px;
     }
 }
@@ -346,7 +356,7 @@
         width: 100% !important;
     }
 
-    .col-max-lg-10{
+    .col-max-lg-10 {
         width: 83.33% !important;
     }
 
@@ -355,43 +365,92 @@
         left: 50%;
     }
 
+    .footer-icon {
+        width: 35% !important;
+    }
+
     .menu a {
         text-align: center;
     }
 
-    .mt-max-lg-44{
+    .mt-max-lg-44 {
         margin-top: 44px !important;
+    }
+
+    .mt-footer {
+        margin-top: 140px !important;
     }
 }
 
 @media (max-width: 768px) {
+    .footer-icon {
+        width: 45% !important;
+    }
+
     .col-max-md-6 {
         width: 50% !important;
+    }
+
+    .mt-footer {
+        margin-top: 100px !important;
     }
 }
 
 @media (max-width: 576px) {
+    .footer-icon {
+        width: 55% !important;
+    }
+
+    .mt-footer {
+        margin-top: 70px !important;
+    }
+
     .col-max-sm-12 {
         width: 100% !important;
     }
 
-        .font-size-max-sm-40 {
-            font-size: 40px;
-        }
+    .font-size-max-sm-40 {
+        font-size: 40px;
+    }
 
-    .bg-section-2{
+    .bg-section-2 {
         padding-top: 366px !important;
-            padding-bottom: 64px !important;
+        padding-bottom: 64px !important;
     }
 }
 
 @media (min-width: 1400px) {
+
     .container,
-        .container-lg,
-        .container-md,
-        .container-sm,
-        .container-xl,
-        .container-xxl {
-            max-width: 1440px !important;
-        }
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1440px !important;
+    }
+}
+
+.header-ellipse {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.section-ellipse-right {
+    position: absolute;
+    right: 0;
+    top: 25%;
+}
+
+.section-ellipse-left {
+    position: absolute;
+    left: 0;
+    top: 69%;
+}
+
+.footer-ellipse {
+    position: absolute;
+    right: 0;
+    bottom: 66%;
 }
