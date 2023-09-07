@@ -67,7 +67,7 @@
 }
 
 #section-2-cards>div:hover {
-    z-index: 3;
+    z-index: 3 !important;
     transform: scale(1.3);
 }
 
@@ -118,7 +118,7 @@
 .nav-button {
     padding: 12px 32px;
     border-radius: 82px;
-    border: none;
+    border: 1px solid transparent;
     background-color: white;
     transition: all 200ms linear;
 }
@@ -292,18 +292,7 @@
     }
 
     .button-wrapper {
-        display: flex;
-        position: fixed;
-        justify-content: end;
-        align-items: center;
-        gap: 20px;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        top: -100%;
-        left: 0;
-        transition: all 300ms linear;
-        z-index: 4 !important;
+        display: none !important;
     }
 
     #label {

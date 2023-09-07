@@ -9,12 +9,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
-        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="icon" href="./assets/images/karmic-labs-icon.png">
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./assets/images/karmic-labs-icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="bg-black bg-lines">
@@ -22,37 +20,45 @@
         <img src="./assets/images/header-top-left-ellipse.png" alt="" class="header-ellipse">
         <div class="container pt-2">
             <nav class="row justify-content-between align-items-center">
-                <a href="#" class="col-3 z-2"><img src="./assets/images/karmic-labs-icon.png" alt="karmic-labs-icon"></a>
+                <a href="#" class="col-3 z-2"><img src="./assets/images/karmic-labs-icon.png"
+                        alt="karmic-labs-icon"></a>
                 <label class="d-none" id="label"><span></span></label>
-                <div class="row col-6 col-max-lg-12 align-items-center menu">
+                <div class="row col-5 col-max-lg-12 align-items-center menu">
                     <a href="" class="text-white col-3 font-sunflower font-size-16 font-weight-500">Home</a>
                     <a href="" class="text-white col-3 font-sunflower font-size-16 font-weight-500">Services</a>
                     <a href="#projects" class="text-white col-3 font-sunflower font-size-16 font-weight-500">Project</a>
                     <a href="" class="text-white col-3 font-sunflower font-size-16 font-weight-500">About</a>
+                    <button class="nav-button font-sunflower font-size-16 font-weight-500 d-none w-25" id="hidden-button">Connect Wallet</button>
                 </div>
-                <div class="button-wrapper col-2 col-max-lg-10">
-                    <button class="nav-button font-sunflower font-size-16 font-weight-500">Connect Wallet</button>
+                <div class="button-wrapper col-3 col-max-lg-10">
+                    <button class="nav-button font-sunflower font-size-16 font-weight-500" id="show-button">Connect Wallet</button>
                 </div>
             </nav>
         </div>
     </header>
     <section class="position-relative" style="margin-top: 15px; padding-top: 160px;padding-bottom: 80px;">
         <img src="./assets/images/hero-section-background-image.png" alt="" class="bg-hero">
-        <div class="container position-relative z-2" >
+        <div class="container position-relative z-2">
             <div class="row">
                 <div class="col-6 col-max-lg-12">
-                    <h2 class="text-white font-weight-300 font-size-64 font-size-max-xl-48 font-size-max-sm-40" style="text-transform: uppercase;">We are believers decentralization and <span class="position-relative">Web3.<svg class="svg-web3-top" xmlns="http://www.w3.org/2000/svg" width="172" height="12" viewBox="0 0 172 12" fill="none">
-                        <path d="M171.5 0.999876L1.00011 10.7958" stroke="white" />
-                    </svg><svg class="svg-web3-bottom" xmlns="http://www.w3.org/2000/svg" width="185" height="15" viewBox="0 0 185 15" fill="none">
-                        <path d="M184 0.795875L1.00018 13.7959" stroke="white" />
-                    </svg></span></h2>
-                    <p class="text-white font-grotesk font-weight-400 font-size-16">Vulputate tristique habitant neque, accumsan.
+                    <h2 class="text-white font-weight-300 font-size-64 font-size-max-xl-48 font-size-max-sm-40"
+                        style="text-transform: uppercase;">We are believers decentralization and <span
+                            class="position-relative">Web3.<svg class="svg-web3-top" xmlns="http://www.w3.org/2000/svg"
+                                width="172" height="12" viewBox="0 0 172 12" fill="none">
+                                <path d="M171.5 0.999876L1.00011 10.7958" stroke="white" />
+                            </svg><svg class="svg-web3-bottom" xmlns="http://www.w3.org/2000/svg" width="185"
+                                height="15" viewBox="0 0 185 15" fill="none">
+                                <path d="M184 0.795875L1.00018 13.7959" stroke="white" />
+                            </svg></span></h2>
+                    <p class="text-white font-grotesk font-weight-400 font-size-16">Vulputate tristique habitant neque,
+                        accumsan.
                         Vitae ultrices nulla erat nibh
                         aliquam, quis tempus volutpat arcu. Leo
                         convallis luctus dis malesuada turpis non consequat ac.</p>
                     <div class="row">
-                        <button class="col-4 hero-button font-sunflower font-weight-300 font-size-16" style="margin-right: 16px;">Get Started <span><svg
-                                    width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <button class="col-4 hero-button font-sunflower font-weight-300 font-size-16"
+                            style="margin-right: 16px;">Get Started <span><svg width="18" height="12"
+                                    viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M17.495 6.49497C17.7683 6.22161 17.7683 5.77839 17.495 5.50503L13.0402 1.05025C12.7668 0.776886 12.3236 0.776886 12.0503 1.05025C11.7769 1.32362 11.7769 1.76684 12.0503 2.0402L16.01 6L12.0503 9.9598C11.7769 10.2332 11.7769 10.6764 12.0503 10.9497C12.3236 11.2231 12.7668 11.2231 13.0402 10.9497L17.495 6.49497ZM0 6.7H17V5.3H0V6.7Z"
                                         fill="white" />
@@ -64,29 +70,35 @@
                 <div class="col-6 col-max-lg-12 mt-max-lg-44" style="padding-left: 20%;">
                     <img src="./assets/images/Hero-section-cards.png" alt="" class="hero-image">
                 </div>
-                <svg class="text-center" width="16" height="52" viewBox="0 0 16 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="text-center" width="16" height="52" viewBox="0 0 16 52" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path opacity="0.7"
                         d="M7.2929 51.7071C7.68342 52.0976 8.31658 52.0976 8.70711 51.7071L15.0711 45.3431C15.4616 44.9526 15.4616 44.3195 15.0711 43.9289C14.6805 43.5384 14.0474 43.5384 13.6569 43.9289L8 49.5858L2.34315 43.9289C1.95262 43.5384 1.31946 43.5384 0.928934 43.9289C0.53841 44.3195 0.53841 44.9526 0.928934 45.3431L7.2929 51.7071ZM7 4.37114e-08L7 51L9 51L9 -4.37114e-08L7 4.37114e-08Z"
                         fill="white" />
                 </svg>
-            
+
             </div>
         </div>
     </section>
     <section style="margin-top: 58px;" class="position-relative">
         <img src="./assets/images/section-mid-right-ellipse.png" alt="" class="section-ellipse-right">
-        <img src="./assets/images/section-mid-left-ellipse.png" alt="" class = "section-ellipse-left">
+        <img src="./assets/images/section-mid-left-ellipse.png" alt="" class="section-ellipse-left">
         <div class="container">
-            <h3 class="text-center text-white font-sunflower font-weight-300 font-size-56 position-relative font-size-max-xl-42" id="projects"><svg class="svg-1" xmlns="http://www.w3.org/2000/svg" width="398" height="104" viewBox="0 0 398 104" fill="none">
-                <path d="M77.7561 20.7001L397.453 1.33153M326.312 83L0.311774 103.068" stroke="white" />
-            </svg>UPCOMING PROJECTS</h3>
+            <h3 class="text-center text-white font-sunflower font-weight-300 font-size-56 position-relative font-size-max-xl-42"
+                id="projects"><svg class="svg-1" xmlns="http://www.w3.org/2000/svg" width="398" height="104"
+                    viewBox="0 0 398 104" fill="none">
+                    <path d="M77.7561 20.7001L397.453 1.33153M326.312 83L0.311774 103.068" stroke="white" />
+                </svg>UPCOMING PROJECTS</h3>
             <div class="row justify-content-center" id="section-1-cards" style="margin-top: 48px;">
                 <div class="col-3 col-max-lg-4 col-max-md-6 col-max-sm-12">
                     <div class="section-1-card">
                         <img src="./assets/images/candle-queen-1.png" alt="" class="w-100">
                         <div class="row justify-content-between">
-                            <span style="width: 50%;" class="pe-0 text-white font-sunflower font-weight-500 font-size-20">Candle Queen</span>
-                        <p style="width: 50%;" class="ps-0 text-white font-sunflower font-weight-700 font-size-16 text-end my-0">15 : 54 : 12</p>
+                            <span style="width: 50%;"
+                                class="pe-0 text-white font-sunflower font-weight-500 font-size-20">Candle Queen</span>
+                            <p style="width: 50%;"
+                                class="ps-0 text-white font-sunflower font-weight-700 font-size-16 text-end my-0">15 :
+                                54 : 12</p>
                         </div>
                         <h6 class="text-white font-grotesk font-weight-300 font-size-16">NFT</h6>
                     </div>
@@ -95,8 +107,11 @@
                     <div class="section-1-card">
                         <img src="./assets/images/candle-queen-2.png" alt="" class="w-100">
                         <div class="row justify-content-between">
-                            <span style="width: 50%;" class="pe-0 text-white font-sunflower font-weight-500 font-size-20">Candle Queen</span>
-                        <p style="width: 50%;" class="ps-0 text-white font-sunflower font-weight-700 font-size-16 text-end my-0">15 : 54 : 12</p>
+                            <span style="width: 50%;"
+                                class="pe-0 text-white font-sunflower font-weight-500 font-size-20">Candle Queen</span>
+                            <p style="width: 50%;"
+                                class="ps-0 text-white font-sunflower font-weight-700 font-size-16 text-end my-0">15 :
+                                54 : 12</p>
                         </div>
                         <h6 class="text-white font-grotesk font-weight-300 font-size-16">NFT</h6>
                     </div>
@@ -105,8 +120,11 @@
                     <div class="section-1-card">
                         <img src="./assets/images/candle-queen-3.png" alt="" class="w-100">
                         <div class="row justify-content-between">
-                            <span style="width: 50%;" class="pe-0 text-white font-sunflower font-weight-500 font-size-20">Candle Queen</span>
-                        <p style="width: 50%;" class="ps-0 text-white font-sunflower font-weight-700 font-size-16 text-end my-0">15 : 54 : 12</p>
+                            <span style="width: 50%;"
+                                class="pe-0 text-white font-sunflower font-weight-500 font-size-20">Candle Queen</span>
+                            <p style="width: 50%;"
+                                class="ps-0 text-white font-sunflower font-weight-700 font-size-16 text-end my-0">15 :
+                                54 : 12</p>
                         </div>
                         <h6 class="text-white font-grotesk font-weight-300 font-size-16">NFT</h6>
                     </div>
@@ -115,8 +133,11 @@
                     <div class="section-1-card">
                         <img src="./assets/images/candle-queen-4.png" alt="" class="w-100">
                         <div class="row justify-content-between">
-                            <span style="width: 50%;" class="pe-0 text-white font-sunflower font-weight-500 font-size-20">Candle Queen</span>
-                        <p style="width: 50%;" class="ps-0 text-white font-sunflower font-weight-700 font-size-16 text-end my-0">15 : 54 : 12</p>
+                            <span style="width: 50%;"
+                                class="pe-0 text-white font-sunflower font-weight-500 font-size-20">Candle Queen</span>
+                            <p style="width: 50%;"
+                                class="ps-0 text-white font-sunflower font-weight-700 font-size-16 text-end my-0">15 :
+                                54 : 12</p>
                         </div>
                         <h6 class="text-white font-grotesk font-weight-300 font-size-16">NFT</h6>
                     </div>
@@ -125,11 +146,15 @@
             <div class="row justify-content-center" style="margin-top: 48px;margin-bottom: 80px;">
                 <button class="section-button-1 font-sunflower font-size-16 font-weight-500">View All</button>
             </div>
-            <h3 class="text-white text-center font-sunflower font-weight-300 font-size-56 position-relative font-size-max-xl-42"><svg class="svg-1" xmlns="http://www.w3.org/2000/svg" width="398" height="104" viewBox="0 0 398 104" fill="none">
-                <path d="M77.7561 20.7001L397.453 1.33153M326.312 83L0.311774 103.068" stroke="white" />
-            </svg>SERVICES</h3>
+            <h3
+                class="text-white text-center font-sunflower font-weight-300 font-size-56 position-relative font-size-max-xl-42">
+                <svg class="svg-1" xmlns="http://www.w3.org/2000/svg" width="398" height="104" viewBox="0 0 398 104"
+                    fill="none">
+                    <path d="M77.7561 20.7001L397.453 1.33153M326.312 83L0.311774 103.068" stroke="white" />
+                </svg>SERVICES</h3>
             <div class="row position-relative justify-content-center" style="margin-top: 77px;">
-                <svg class="white-ball" xmlns="http://www.w3.org/2000/svg" width="105" height="106" viewBox="0 0 105 106" fill="none">
+                <svg class="white-ball" xmlns="http://www.w3.org/2000/svg" width="105" height="106"
+                    viewBox="0 0 105 106" fill="none">
                     <g filter="url(#filter0_d_1_19489)">
                         <ellipse cx="52.5" cy="49" rx="36.5" ry="37" fill="white" />
                     </g>
@@ -137,8 +162,8 @@
                         <filter id="filter0_d_1_19489" x="0" y="0" width="105" height="106" filterUnits="userSpaceOnUse"
                             color-interpolation-filters="sRGB">
                             <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                                result="hardAlpha" />
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
                             <feOffset dy="4" />
                             <feGaussianBlur stdDeviation="8" />
                             <feComposite in2="hardAlpha" operator="out" />
@@ -219,62 +244,82 @@
     </section>
     <section class="bg-section-2" style="margin-top: 70px;padding-top: 140px;padding-bottom: 120px;">
         <div class="container">
-            <h3 class="text-center font-sunflower font-weight-300 font-size-56 position-relative font-size-max-xl-42 z-2"><svg class="svg-1" xmlns="http://www.w3.org/2000/svg" width="398" height="104" viewBox="0 0 398 104" fill="none">
-                <path d="M77.7561 20.7001L397.453 1.33153M326.312 83L0.311774 103.068" stroke="black" />
-            </svg>PROJECTS</h3>
+            <h3
+                class="text-center font-sunflower font-weight-300 font-size-56 position-relative font-size-max-xl-42 z-2">
+                <svg class="svg-1" xmlns="http://www.w3.org/2000/svg" width="398" height="104" viewBox="0 0 398 104"
+                    fill="none">
+                    <path d="M77.7561 20.7001L397.453 1.33153M326.312 83L0.311774 103.068" stroke="black" />
+                </svg>PROJECTS</h3>
             <div class="row justify-content-center ">
-                <h5 class="text-center font-grotesk font-weight-400 font-size-16 w-50 z-2" style="margin-top: 24px;">Id nam massa sit ut purus tortor
+                <h5 class="text-center font-grotesk font-weight-400 font-size-16 w-50 z-2" style="margin-top: 24px;">Id
+                    nam massa sit ut purus tortor
                     est ultrices nunc. Ipsum, nibh egestas vehicula
                     tellus. Molestie adipiscing diam nibh
                     lectus. Magna id nisl quis vestibulum rhoncus.</h5>
             </div>
             <div class="row justify-content-center " id="section-2-cards" style="margin-top: 54px;">
-                <div class="col-3 col-max-lg-4 col-max-md-6 col-max-sm-12 position-relative z-2" style="margin-top: 24px;">
+                <div class="col-3 col-max-lg-4 col-max-md-6 col-max-sm-12 position-relative z-2"
+                    style="margin-top: 24px;">
                     <img src="./assets/images/grid-1.png" alt="">
                     <div class="support-text">
-                        <h4 class="my-0 font-sunflower text-center text-white font-weight-700 font-size-20">The Tokyo Tem</h4>
+                        <h4 class="my-0 font-sunflower text-center text-white font-weight-700 font-size-20">The Tokyo
+                            Tem</h4>
                     </div>
                 </div>
-                <div class="col-3 col-max-lg-4 col-max-md-6 col-max-sm-12 position-relative z-2" style="margin-top: 24px;">
+                <div class="col-3 col-max-lg-4 col-max-md-6 col-max-sm-12 position-relative z-2"
+                    style="margin-top: 24px;">
                     <img src="./assets/images/grid-8.png" alt="">
                     <div class="support-text">
-                        <h4 class="my-0 font-sunflower text-center text-white font-weight-700 font-size-20">The Tokyo Tem</h4>
+                        <h4 class="my-0 font-sunflower text-center text-white font-weight-700 font-size-20">The Tokyo
+                            Tem</h4>
                     </div>
                 </div>
-                <div class="col-3 col-max-lg-4 col-max-md-6 col-max-sm-12 position-relative z-2" style="margin-top: 24px;">
+                <div class="col-3 col-max-lg-4 col-max-md-6 col-max-sm-12 position-relative z-2"
+                    style="margin-top: 24px;">
                     <img src="./assets/images/grid-3.png" alt="">
                     <div class="support-text">
-                        <h4 class="my-0 font-sunflower text-center text-white font-weight-700 font-size-20">The Tokyo Tem</h4>
+                        <h4 class="my-0 font-sunflower text-center text-white font-weight-700 font-size-20">The Tokyo
+                            Tem</h4>
                     </div>
                 </div>
-                <div class="col-3 col-max-lg-4 col-max-md-6 col-max-sm-12 position-relative z-2" style="margin-top: 24px;">
+                <div class="col-3 col-max-lg-4 col-max-md-6 col-max-sm-12 position-relative z-2"
+                    style="margin-top: 24px;">
                     <img src="./assets/images/grid-4.png" alt="">
                     <div class="support-text">
-                        <h4 class="my-0 font-sunflower text-center text-white font-weight-700 font-size-20">The Tokyo Tem</h4>
+                        <h4 class="my-0 font-sunflower text-center text-white font-weight-700 font-size-20">The Tokyo
+                            Tem</h4>
                     </div>
                 </div>
-                <div class="col-3 col-max-lg-4 col-max-md-6 col-max-sm-12 position-relative z-2"  style="margin-top: 24px;">
+                <div class="col-3 col-max-lg-4 col-max-md-6 col-max-sm-12 position-relative z-2"
+                    style="margin-top: 24px;">
                     <img src="./assets/images/grid-5.png" alt="">
                     <div class="support-text">
-                        <h4 class="my-0 font-sunflower text-center text-white font-weight-700 font-size-20">The Tokyo Tem</h4>
+                        <h4 class="my-0 font-sunflower text-center text-white font-weight-700 font-size-20">The Tokyo
+                            Tem</h4>
                     </div>
                 </div>
-                <div class="col-3 col-max-lg-4 col-max-md-6 col-max-sm-12 position-relative z-2" style="margin-top: 24px;">
+                <div class="col-3 col-max-lg-4 col-max-md-6 col-max-sm-12 position-relative z-2"
+                    style="margin-top: 24px;">
                     <img src="./assets/images/grid-6.png" alt="">
                     <div class="support-text">
-                        <h4 class="my-0 font-sunflower text-center text-white font-weight-700 font-size-20">The Tokyo Tem</h4>
+                        <h4 class="my-0 font-sunflower text-center text-white font-weight-700 font-size-20">The Tokyo
+                            Tem</h4>
                     </div>
                 </div>
-                <div class="col-3 col-max-lg-4 col-max-md-6 col-max-sm-12 position-relative z-2" style="margin-top: 24px;">
+                <div class="col-3 col-max-lg-4 col-max-md-6 col-max-sm-12 position-relative z-2"
+                    style="margin-top: 24px;">
                     <img src="./assets/images/grid-7.png" alt="">
                     <div class="support-text">
-                        <h4 class="my-0 font-sunflower text-center text-white font-weight-700 font-size-20">The Tokyo Tem</h4>
+                        <h4 class="my-0 font-sunflower text-center text-white font-weight-700 font-size-20">The Tokyo
+                            Tem</h4>
                     </div>
                 </div>
-                <div class="col-3 col-max-lg-4 col-max-md-6 col-max-sm-12 position-relative z-2" style="margin-top: 24px;">
+                <div class="col-3 col-max-lg-4 col-max-md-6 col-max-sm-12 position-relative z-2"
+                    style="margin-top: 24px;">
                     <img src="./assets/images/grid-8.png" alt="">
                     <div class="support-text">
-                        <h4 class="my-0 font-sunflower text-center text-white font-weight-700 font-size-20">The Tokyo Tem</h4>
+                        <h4 class="my-0 font-sunflower text-center text-white font-weight-700 font-size-20">The Tokyo
+                            Tem</h4>
                     </div>
                 </div>
             </div>
@@ -286,14 +331,19 @@
     <footer class="position-relative">
         <img src="./assets/images/footer-top-right-ellipse.png" alt="" class="footer-ellipse">
         <div class="container">
-            <h3 class="text-center text-white font-sunflower font-weight-300 font-size-56 position-relative font-size-max-xl-42"><svg class="svg-1" xmlns="http://www.w3.org/2000/svg" width="398" height="104" viewBox="0 0 398 104" fill="none">
-                <path d="M77.7561 20.7001L397.453 1.33153M326.312 83L0.311774 103.068" stroke="white" />
-            </svg>ABOUT</h3>
+            <h3
+                class="text-center text-white font-sunflower font-weight-300 font-size-56 position-relative font-size-max-xl-42">
+                <svg class="svg-1" xmlns="http://www.w3.org/2000/svg" width="398" height="104" viewBox="0 0 398 104"
+                    fill="none">
+                    <path d="M77.7561 20.7001L397.453 1.33153M326.312 83L0.311774 103.068" stroke="white" />
+                </svg>ABOUT</h3>
             <div class="row justify-content-center">
-                <h5 class="text-center text-white font-grotesk font-weight-400 font-size-16 w-50 z-2" style="margin-top: 16px;"><span class="font-weight-700">Eros</span>,
+                <h5 class="text-center text-white font-grotesk font-weight-400 font-size-16 w-50 z-2"
+                    style="margin-top: 16px;"><span class="font-weight-700">Eros</span>,
                     amet, feugiat sit nec duis. <span class="font-weight-700">Tellus</span> in
                     faucibus consectetur dapibus. Eget sem eget nec tincidunt. Urna nulla
-                    <span class="font-weight-700">scelerisque</span> pretium diam aliquam montes, <span class="font-weight-700">interdum
+                    <span class="font-weight-700">scelerisque</span> pretium diam aliquam montes, <span
+                        class="font-weight-700">interdum
                         malesuada</span>.
                 </h5>
             </div>
@@ -339,29 +389,29 @@
                 <img src="./assets/images/karmic-labs-footer.png" alt="" class="footer-icon">
             </div>
             <div class="row justify-content-center">
-                <svg class="px-0 svg-icon" style="width: 5%;" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35"
-                    fill="none">
+                <svg class="px-0 svg-icon" style="width: 5%;" xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                    viewBox="0 0 35 35" fill="none">
                     <rect width="35" height="35" rx="17.5" fill="white" />
                     <path
                         d="M17 26.036C14.54 26.036 14.25 26.023 13.29 25.981C12.5414 25.9564 11.8024 25.8042 11.105 25.531C10.5082 25.2987 9.96618 24.9449 9.51342 24.492C9.06066 24.039 8.70703 23.4969 8.475 22.9C8.21231 22.2 8.07062 21.4605 8.056 20.713C8 19.755 8 19.441 8 17C8 14.533 8.013 14.245 8.056 13.29C8.07094 12.5435 8.21262 11.805 8.475 11.106C8.70677 10.5083 9.06063 9.96558 9.51399 9.51239C9.96736 9.0592 10.5102 8.70554 11.108 8.474C11.8066 8.2102 12.5453 8.06814 13.292 8.054C14.247 8 14.561 8 17 8C19.48 8 19.765 8.013 20.71 8.054C21.458 8.068 22.2 8.21 22.9 8.474C23.4976 8.70581 24.0403 9.05956 24.4937 9.51272C24.947 9.96587 25.301 10.5085 25.533 11.106C25.8 11.816 25.943 12.566 25.954 13.323C26.01 14.281 26.01 14.594 26.01 17.034C26.01 19.474 25.996 19.794 25.954 20.741C25.9391 21.4892 25.797 22.2294 25.534 22.93C25.3014 23.5273 24.9471 24.0698 24.4936 24.5229C24.0402 24.976 23.4975 25.3298 22.9 25.562C22.2 25.824 21.461 25.966 20.714 25.981C19.759 26.036 19.446 26.036 17 26.036ZM16.966 9.583C14.52 9.583 14.266 9.595 13.311 9.638C12.7406 9.64546 12.1758 9.75065 11.641 9.949C11.2509 10.0985 10.8965 10.3281 10.6006 10.623C10.3047 10.9179 10.0739 11.2715 9.923 11.661C9.723 12.201 9.618 12.772 9.612 13.348C9.559 14.317 9.559 14.571 9.559 17C9.559 19.4 9.568 19.691 9.612 20.654C9.621 21.224 9.726 21.789 9.923 22.324C10.229 23.111 10.853 23.733 11.642 24.035C12.1761 24.2346 12.7408 24.3398 13.311 24.346C14.279 24.402 14.534 24.402 16.966 24.402C19.419 24.402 19.673 24.39 20.62 24.346C21.1904 24.3391 21.7553 24.2339 22.29 24.035C22.678 23.8843 23.0304 23.6546 23.3248 23.3604C23.6192 23.0662 23.8491 22.7139 24 22.326C24.2 21.786 24.305 21.214 24.311 20.638H24.322C24.365 19.682 24.365 19.427 24.365 16.984C24.365 14.541 24.354 14.284 24.311 13.329C24.302 12.7595 24.1968 12.1955 24 11.661C23.8495 11.2725 23.6197 10.9197 23.3253 10.6249C23.0309 10.3302 22.6783 10.1 22.29 9.949C21.7555 9.74968 21.1904 9.64446 20.62 9.638C19.653 9.583 19.4 9.583 16.966 9.583ZM17 21.619C16.0856 21.6196 15.1915 21.349 14.4309 20.8414C13.6703 20.3338 13.0773 19.6121 12.7269 18.7675C12.3765 17.9228 12.2844 16.9932 12.4624 16.0963C12.6404 15.1994 13.0803 14.3753 13.7266 13.7285C14.3729 13.0816 15.1966 12.6409 16.0934 12.4622C16.9902 12.2834 17.9198 12.3747 18.7648 12.7243C19.6097 13.074 20.332 13.6664 20.8402 14.4266C21.3484 15.1867 21.6198 16.0806 21.62 16.995C21.6184 18.2202 21.1313 19.3948 20.2653 20.2615C19.3994 21.1282 18.2252 21.6164 17 21.619ZM17 13.993C16.4067 13.993 15.8266 14.1689 15.3333 14.4986C14.8399 14.8282 14.4554 15.2968 14.2284 15.8449C14.0013 16.3931 13.9419 16.9963 14.0576 17.5783C14.1734 18.1602 14.4591 18.6948 14.8787 19.1143C15.2982 19.5339 15.8328 19.8196 16.4147 19.9354C16.9967 20.0511 17.5999 19.9917 18.1481 19.7646C18.6962 19.5376 19.1648 19.1531 19.4944 18.6597C19.8241 18.1664 20 17.5863 20 16.993C19.9982 16.1979 19.6815 15.4359 19.1193 14.8737C18.5571 14.3115 17.7951 13.9948 17 13.993ZM21.8 13.28C21.6584 13.2795 21.5184 13.2511 21.3878 13.1964C21.2572 13.1418 21.1386 13.0619 21.0389 12.9614C20.8375 12.7585 20.7249 12.4839 20.726 12.198C20.7271 11.9121 20.8417 11.6383 21.0446 11.4369C21.2475 11.2355 21.5221 11.1229 21.808 11.124C22.0939 11.1251 22.3677 11.2397 22.5691 11.4426C22.7705 11.6455 22.8831 11.9201 22.882 12.206C22.8809 12.4919 22.7663 12.7657 22.5634 12.9671C22.3605 13.1685 22.0859 13.2811 21.8 13.28Z"
                         fill="#040404" />
                 </svg>
-                <svg class="px-0 svg-icon" style="width: 5%;" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35"
-                    fill="none">
+                <svg class="px-0 svg-icon" style="width: 5%;" xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                    viewBox="0 0 35 35" fill="none">
                     <rect width="35" height="35" rx="17.5" fill="white" />
                     <path
                         d="M28.706 10.1895C27.871 10.5595 26.974 10.8095 26.031 10.9225C27.004 10.3403 27.7319 9.42398 28.079 8.34452C27.1648 8.88751 26.1643 9.26971 25.121 9.47452C24.4194 8.72538 23.4901 8.22884 22.4773 8.06199C21.4646 7.89514 20.4251 8.06731 19.5202 8.55177C18.6154 9.03623 17.8958 9.80588 17.4732 10.7412C17.0505 11.6766 16.9485 12.7253 17.183 13.7245C15.3307 13.6315 13.5186 13.1501 11.8644 12.3114C10.2102 11.4728 8.75084 10.2957 7.581 8.85652C7.181 9.54652 6.951 10.3465 6.951 11.1985C6.95055 11.9655 7.13943 12.7208 7.50088 13.3973C7.86232 14.0737 8.38516 14.6506 9.023 15.0765C8.28328 15.053 7.55987 14.8531 6.913 14.4935V14.5535C6.91293 15.6293 7.28503 16.6719 7.96618 17.5045C8.64733 18.3371 9.59557 18.9084 10.65 19.1215C9.96378 19.3072 9.24434 19.3346 8.546 19.2015C8.8435 20.1271 9.423 20.9365 10.2034 21.5164C10.9837 22.0963 11.9259 22.4177 12.898 22.4355C11.2478 23.7309 9.20989 24.4336 7.112 24.4305C6.74038 24.4306 6.36908 24.4089 6 24.3655C8.12948 25.7347 10.6083 26.4613 13.14 26.4585C21.71 26.4585 26.395 19.3605 26.395 13.2045C26.395 13.0045 26.39 12.8025 26.381 12.6025C27.2923 11.9435 28.0789 11.1274 28.704 10.1925L28.706 10.1895Z"
                         fill="#040404" />
                 </svg>
-                <svg class="px-0 svg-icon" style="width: 5%;" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35"
-                    fill="none">
+                <svg class="px-0 svg-icon" style="width: 5%;" xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                    viewBox="0 0 35 35" fill="none">
                     <rect width="35" height="35" rx="17.5" fill="white" />
                     <path
                         d="M14.9778 30V18.7385H12V14.6838H14.9778V11.2206C14.9778 8.49917 16.7368 6 20.7898 6C22.4309 6 23.6443 6.15732 23.6443 6.15732L23.5487 9.9437C23.5487 9.9437 22.3112 9.93166 20.9607 9.93166C19.4991 9.93166 19.2649 10.6052 19.2649 11.7232V14.6838H23.6649L23.4734 18.7385H19.2649V30H14.9778Z"
                         fill="#040404" />
                 </svg>
-                <svg class="px-0 svg-icon" style="width: 5%;" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35"
-                    fill="none">
+                <svg class="px-0 svg-icon" style="width: 5%;" xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                    viewBox="0 0 35 35" fill="none">
                     <rect width="35" height="35" rx="17.5" fill="white" />
                     <path
                         d="M28.5006 11.512C28.3647 11.0272 28.1 10.5883 27.7346 10.242C27.3589 9.88496 26.8984 9.62959 26.3966 9.49996C24.5186 9.00496 16.9946 9.00496 16.9946 9.00496C13.8579 8.96927 10.722 9.12623 7.60462 9.47496C7.10281 9.61417 6.64318 9.87525 6.26662 10.235C5.89662 10.591 5.62862 11.03 5.48862 11.511C5.15231 13.3227 4.98891 15.1623 5.00062 17.005C4.98862 18.846 5.15162 20.685 5.48862 22.499C5.62562 22.978 5.89262 23.415 6.26362 23.768C6.63462 24.121 7.09662 24.376 7.60462 24.511C9.50762 25.005 16.9946 25.005 16.9946 25.005C20.1353 25.0407 23.2752 24.8837 26.3966 24.535C26.8984 24.4053 27.3589 24.15 27.7346 23.793C28.0999 23.4467 28.3643 23.0077 28.4996 22.523C28.8447 20.7119 29.0125 18.8716 29.0006 17.028C29.0266 15.1766 28.859 13.3275 28.5006 11.511V11.512ZM14.6026 20.429V13.582L20.8626 17.006L14.6026 20.429Z"
@@ -369,7 +419,8 @@
                 </svg>
             </div>
             <div class="white-line"></div>
-            <h4 class="text-center text-white font-grotesk font-weight-400 font-size-16" style="margin-top: 32px;opacity: 0.7;">© Karmic labs 2022</h4>
+            <h4 class="text-center text-white font-grotesk font-weight-400 font-size-16"
+                style="margin-top: 32px;opacity: 0.7;">© Karmic labs 2022</h4>
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"

@@ -1,19 +1,29 @@
 let label = document.querySelector("#label");
 let menu = document.querySelector(".menu");
-let btnWrapper = document.querySelector(".button-wrapper");
+let aTags = document.querySelectorAll(".menu a");
+let hiddenButton = document.getElementById("hidden-button");
+
+
+aTags.forEach((one) => {
+    one.addEventListener("click", () => {
+        console.log(one);
+        if (flag === 0) { 
+        }
+    })
+} )
 
 let flag = 1;
 
 label.addEventListener("click", () => {
-    // menu.classList.toggle("d-flex");
+    
     if (flag === 1) {
         menu.style.top = 0;
-        btnWrapper.style.top = 0;
+        hiddenButton.classList.remove("d-none");
         flag--;
     }
     else {
         menu.style.top = "-100%";
-        btnWrapper.style.top = "-100%";
+        hiddenButton.classList.add("d-none");
         flag++;
     }
 });
