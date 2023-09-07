@@ -10,7 +10,7 @@
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
         integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="./assets/images/karmic-labs-icon.png">
+    <link rel="shortcut icon" href="./assets/images/karmic-labs-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
         integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -24,10 +24,10 @@
                         alt="karmic-labs-icon"></a>
                 <label class="d-none" id="label"><span></span></label>
                 <div class="row col-5 col-max-lg-12 align-items-center menu">
-                    <a href="" class="text-white col-3 font-sunflower font-size-16 font-weight-500">Home</a>
-                    <a href="" class="text-white col-3 font-sunflower font-size-16 font-weight-500">Services</a>
-                    <a href="#projects" class="text-white col-3 font-sunflower font-size-16 font-weight-500">Project</a>
-                    <a href="" class="text-white col-3 font-sunflower font-size-16 font-weight-500">About</a>
+                    <a href="#home" class="text-white col-3 font-sunflower font-size-16 font-weight-500">Home</a>
+                    <a href="#services" class="text-white col-3 font-sunflower font-size-16 font-weight-500">Services</a>
+                    <a href="#projects" class=" text-white col-3 font-sunflower font-size-16 font-weight-500">Project</a>
+                    <a href="#about" class="text-white col-3 font-sunflower font-size-16 font-weight-500">About</a>
                     <button class="nav-button font-sunflower font-size-16 font-weight-500 d-none w-25" id="hidden-button">Connect Wallet</button>
                 </div>
                 <div class="button-wrapper col-3 col-max-lg-10">
@@ -36,7 +36,7 @@
             </nav>
         </div>
     </header>
-    <section class="position-relative" style="margin-top: 15px; padding-top: 160px;padding-bottom: 80px;">
+    <section id="home" class="position-relative" style="margin-top: 15px; padding-top: 160px;padding-bottom: 80px;">
         <img src="./assets/images/hero-section-background-image.png" alt="" class="bg-hero">
         <div class="container position-relative z-2">
             <div class="row">
@@ -55,28 +55,27 @@
                         Vitae ultrices nulla erat nibh
                         aliquam, quis tempus volutpat arcu. Leo
                         convallis luctus dis malesuada turpis non consequat ac.</p>
-                    <div class="row">
-                        <button class="col-4 hero-button font-sunflower font-weight-300 font-size-16"
+                    <div class="row" style="margin-top: 24px;">
+                        <button class="col-4 hero-button-1 font-sunflower font-weight-300 font-size-16"
                             style="margin-right: 16px;">Get Started <span><svg width="18" height="12"
                                     viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M17.495 6.49497C17.7683 6.22161 17.7683 5.77839 17.495 5.50503L13.0402 1.05025C12.7668 0.776886 12.3236 0.776886 12.0503 1.05025C11.7769 1.32362 11.7769 1.76684 12.0503 2.0402L16.01 6L12.0503 9.9598C11.7769 10.2332 11.7769 10.6764 12.0503 10.9497C12.3236 11.2231 12.7668 11.2231 13.0402 10.9497L17.495 6.49497ZM0 6.7H17V5.3H0V6.7Z"
-                                        fill="white" />
+                                        fill="black" />
                                 </svg>
                             </span></button>
-                        <button class="col-4 hero-button font-sunflower font-weight-300 font-size-16">Read More</button>
+                        <button class="col-4 hero-button-2 font-sunflower font-weight-300 font-size-16">Read More</button>
                     </div>
                 </div>
                 <div class="col-6 col-max-lg-12 mt-max-lg-44" style="padding-left: 20%;">
                     <img src="./assets/images/Hero-section-cards.png" alt="" class="hero-image">
                 </div>
-                <svg class="text-center" width="16" height="52" viewBox="0 0 16 52" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.7"
-                        d="M7.2929 51.7071C7.68342 52.0976 8.31658 52.0976 8.70711 51.7071L15.0711 45.3431C15.4616 44.9526 15.4616 44.3195 15.0711 43.9289C14.6805 43.5384 14.0474 43.5384 13.6569 43.9289L8 49.5858L2.34315 43.9289C1.95262 43.5384 1.31946 43.5384 0.928934 43.9289C0.53841 44.3195 0.53841 44.9526 0.928934 45.3431L7.2929 51.7071ZM7 4.37114e-08L7 51L9 51L9 -4.37114e-08L7 4.37114e-08Z"
-                        fill="white" />
-                </svg>
-
+                    <a href="#upcoming" class="row justify-content-center"><svg class="text-center down-arrow" width="16" height="52" viewBox="0 0 16 52" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.7"
+                            d="M7.2929 51.7071C7.68342 52.0976 8.31658 52.0976 8.70711 51.7071L15.0711 45.3431C15.4616 44.9526 15.4616 44.3195 15.0711 43.9289C14.6805 43.5384 14.0474 43.5384 13.6569 43.9289L8 49.5858L2.34315 43.9289C1.95262 43.5384 1.31946 43.5384 0.928934 43.9289C0.53841 44.3195 0.53841 44.9526 0.928934 45.3431L7.2929 51.7071ZM7 4.37114e-08L7 51L9 51L9 -4.37114e-08L7 4.37114e-08Z"
+                            fill="white" />
+                    </svg></a>
             </div>
         </div>
     </section>
@@ -84,8 +83,8 @@
         <img src="./assets/images/section-mid-right-ellipse.png" alt="" class="section-ellipse-right">
         <img src="./assets/images/section-mid-left-ellipse.png" alt="" class="section-ellipse-left">
         <div class="container">
-            <h3 class="text-center text-white font-sunflower font-weight-300 font-size-56 position-relative font-size-max-xl-42"
-                id="projects"><svg class="svg-1" xmlns="http://www.w3.org/2000/svg" width="398" height="104"
+            <h3 id="upcoming" class="text-center text-white font-sunflower font-weight-300 font-size-56 position-relative font-size-max-xl-42"
+                ><svg class="svg-1" xmlns="http://www.w3.org/2000/svg" width="398" height="104"
                     viewBox="0 0 398 104" fill="none">
                     <path d="M77.7561 20.7001L397.453 1.33153M326.312 83L0.311774 103.068" stroke="white" />
                 </svg>UPCOMING PROJECTS</h3>
@@ -146,14 +145,14 @@
             <div class="row justify-content-center" style="margin-top: 48px;margin-bottom: 80px;">
                 <button class="section-button-1 font-sunflower font-size-16 font-weight-500">View All</button>
             </div>
-            <h3
+            <h3 id="services"
                 class="text-white text-center font-sunflower font-weight-300 font-size-56 position-relative font-size-max-xl-42">
                 <svg class="svg-1" xmlns="http://www.w3.org/2000/svg" width="398" height="104" viewBox="0 0 398 104"
                     fill="none">
                     <path d="M77.7561 20.7001L397.453 1.33153M326.312 83L0.311774 103.068" stroke="white" />
                 </svg>SERVICES</h3>
             <div class="row position-relative justify-content-center" style="margin-top: 77px;">
-                <div class="col-3 col-max-lg-4 col-max-md-6 col-max-sm-12 px-0 position-relative">
+                <div class="col-3 col-max-lg-4 col-max-md-6 col-max-sm-12  position-relative">
                     
                     <div class="section-2-card">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
@@ -193,7 +192,7 @@
                     </defs>
                 </svg>
                 </div>
-                <div class="col-3 col-max-lg-4 col-max-md-6 col-max-sm-12 px-0 position-relative">
+                <div class="col-3 col-max-lg-4 col-max-md-6 col-max-sm-12  position-relative">
                     
                     <div class="section-2-card">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
@@ -232,7 +231,7 @@
                     </defs>
                 </svg>
                 </div>
-                <div class="col-3 col-max-lg-4 col-max-md-6 col-max-sm-12 px-0 position-relative">
+                <div class="col-3 col-max-lg-4 col-max-md-6 col-max-sm-12  position-relative">
                     
                     <div class="section-2-card">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
@@ -266,7 +265,7 @@
                     </defs>
                 </svg>
                 </div>
-                <div class="col-3 col-max-lg-4 col-max-md-6 col-max-sm-12 px-0 position-relative">
+                <div class="col-3 col-max-lg-4 col-max-md-6 col-max-sm-12  position-relative">
                     
                     <div class="section-2-card">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
@@ -306,7 +305,7 @@
             </div>
         </div>
     </section>
-    <section class="bg-section-2" style="margin-top: 70px;padding-top: 140px;padding-bottom: 120px;">
+    <section id="projects" class="bg-section-2" style="margin-top: 70px;padding-top: 140px;padding-bottom: 120px;">
         <div class="container">
             <h3
                 class="text-center font-sunflower font-weight-300 font-size-56 position-relative font-size-max-xl-42 z-2">
@@ -392,7 +391,7 @@
             </div>
         </div>
     </section>
-    <footer class="position-relative">
+    <footer class="position-relative" id="about">
         <img src="./assets/images/footer-top-right-ellipse.png" alt="" class="footer-ellipse">
         <div class="container">
             <h3

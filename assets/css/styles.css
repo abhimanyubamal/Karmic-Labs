@@ -8,13 +8,20 @@
 .bg-lines {
     background: url("../images/bg-total.png");
     z-index: 2 !important;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.down-arrow{
+    width: 5% !important;
+}
+
+.down-arrow:hover{
+    transform: scale(1.5);
 }
 
 .bg-hero {
-    /* background: url("../images/hero-section-background-image.png"); */
-    /* position: center center;
-    background-repeat: no-repeat;
-    background-size: cover; */
     position: absolute;
     top: 0;
     left: 0;
@@ -136,7 +143,23 @@
     border: 1px solid white;
 }
 
-.hero-button {
+.hero-button-1 {
+    padding: 12px 24px;
+    border-radius: 82px;
+    background-color: white;
+    color: black;
+    border: 1px solid transparent;
+    transition: all 200ms linear;
+}
+
+.hero-button-1:hover{
+    background-color: transparent;
+    color: white;
+    font-weight: 700;
+    border-color: white;
+}
+
+.hero-button-2 {
     padding: 12px 24px;
     border-radius: 82px;
     background-color: transparent;
@@ -145,14 +168,14 @@
     transition: all 200ms linear;
 }
 
-.hero-button:hover {
+.hero-button-2:hover {
     background-color: white;
     color: black;
     font-weight: 700;
 }
 
-.hero-button:hover svg>path {
-    fill: black;
+.hero-button-1:hover svg>path {
+    fill: white;
 }
 
 .section-button-1 {
@@ -195,7 +218,7 @@
     top: 0;
     left: 100%;
     opacity: 0;
-    transform: translate(-55%, -40%);
+    transform: translate(-65%, -45%);
     transition: 300ms linear;
     z-index: 2 !important;
 }
