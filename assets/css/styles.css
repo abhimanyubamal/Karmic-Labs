@@ -3,6 +3,7 @@
 * {
     text-decoration: none !important;
     list-style-type: none !important;
+    outline: 1px solid red;
 }
 
 .bg-lines {
@@ -295,6 +296,10 @@
     transform: scale(1.3);
 }
 
+.svg-icon{
+    width: 5% !important;
+}
+
 .hero-image {
     width: 100%;
     height: 100%;
@@ -317,6 +322,14 @@
 }
 
 @media (max-width: 992px) {
+    .svg-icon{
+        width: 10% !important;
+    }
+
+    .svg-1{
+        width: 51% !important;
+    }
+
     .menu {
         display: flex;
         flex-direction: column;
@@ -344,12 +357,15 @@
         float: right;
         width: 20px !important;
         z-index: 5 !important;
+        cursor: pointer;
     }
 
     label>span {
         content: "";
         position: relative;
         top: 0;
+        left: 0;
+        transform: translateX(-50%);
         width: 20px;
         height: 3px !important;
         background-color: white;
@@ -410,11 +426,16 @@
     }
 
     .hero-image{
-        transform: translate(0, 0);
+        transform: translate(-12%, -2%);
+    }
+
+    .button-row{
+        justify-content: space-around;
     }
 }
 
 @media (max-width: 768px) {
+
     .footer-icon {
         width: 45% !important;
     }
@@ -426,9 +447,20 @@
     .mt-footer {
         margin-top: 100px !important;
     }
+
+    .section-button-1{
+        width: 25% !important;
+    }
+    .section-button-2{
+        width: 25% !important;
+    }
 }
 
 @media (max-width: 576px) {
+    .svg-icon{
+        width: 15% !important;
+    }
+
     .footer-icon {
         width: 55% !important;
     }
@@ -439,6 +471,10 @@
 
     .col-max-sm-12 {
         width: 100% !important;
+    }
+
+    .col-max-sm-10{
+        width: 83.33% !important;
     }
 
     .font-size-max-sm-40 {
@@ -467,6 +503,7 @@
     position: absolute;
     left: 0;
     top: 0;
+    width: 100%;
 }
 
 .section-ellipse-right {
@@ -485,4 +522,24 @@
     position: absolute;
     right: 0;
     bottom: 66%;
+}
+
+@media (max-width: 370px) {
+    .font-size-max-iphone{
+        font-size: 32px;
+    }
+
+        .section-button-1 {
+            width: 35% !important;
+        }
+    
+        .section-button-2 {
+            width: 35% !important;
+        }
+}
+
+@media (max-width: 300px) {
+    .font-size-max-iphone {
+            font-size: 20px;
+        }
 }
