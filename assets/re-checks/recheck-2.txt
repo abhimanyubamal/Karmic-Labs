@@ -1,4 +1,8 @@
 buttons - config(too big),
 vh-100 on image,
+something is overflow - image-ellipse-left,
 section - top bottom padding should be same,
+remove transform scale under 786px,
 <p> tags to cover more space,
+upcoming-project cards should have 16 px sapce in-between,
+label should tranform into cross when clicked.

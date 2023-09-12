@@ -23,6 +23,7 @@ label.addEventListener("click", () => {
 
 aTags.forEach((one) => {
     one.addEventListener("click", () => {
+        label.classList.toggle("active");
         if (flag === 0) {
             document.body.classList.remove("overflow-y-hidden");
             hiddenButton.classList.add("d-none");
