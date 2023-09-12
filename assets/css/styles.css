@@ -484,7 +484,7 @@
 
 @media (max-width: 768px) {
     .white-ball {
-        width: 31% !important;
+        width: 30% !important;
     }
 
     :root {
@@ -506,14 +506,6 @@
     .mt-footer {
         margin-top: 100px !important;
     }
-
-    .section-button-1 {
-        width: 25% !important;
-    }
-
-    .section-button-2 {
-        width: 25% !important;
-    }
 }
 
 @media (max-width: 576px) {
@@ -533,7 +525,7 @@
     }
 
     .white-ball {
-        width: 35% !important;
+        width: 32% !important;
     }
 
     .bg-section-2 {
@@ -633,14 +625,6 @@
     .hero-button-2 {
         width: 85% !important;
         margin-top: 16px !important;
-    }
-
-    .section-button-1 {
-        width: 85% !important;
-    }
-
-    .section-button-2 {
-        width: 85% !important;
     }
 
     .svg-1 {
