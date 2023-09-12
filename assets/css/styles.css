@@ -3,7 +3,7 @@
 * {
     text-decoration: none !important;
     list-style-type: none !important;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 :root {
