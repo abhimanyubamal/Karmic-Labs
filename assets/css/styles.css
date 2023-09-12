@@ -19,7 +19,7 @@
 }
 
 .down-arrow {
-    width: 5% !important;
+    width: unset !important;
 }
 
 .down-arrow:hover {
@@ -162,7 +162,6 @@
 .hero-button-1:hover {
     background-color: transparent;
     color: white;
-    font-weight: 700;
     border-color: white;
 }
 
@@ -178,7 +177,6 @@
 .hero-button-2:hover {
     background-color: white;
     color: black;
-    font-weight: 700;
 }
 
 .hero-button-1:hover svg>path {
@@ -484,7 +482,7 @@
 }
 
 @media (max-width: 768px) {
-    .white-ball{
+    .white-ball {
         width: 31% !important;
     }
 
@@ -518,9 +516,11 @@
 }
 
 @media (max-width: 576px) {
+
     .white-ball {
-            width: 35% !important;
-        }
+        width: 35% !important;
+    }
+
     .bg-section-2 {
         padding-top: 48px !important;
         background-image: none;
