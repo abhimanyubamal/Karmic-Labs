@@ -3,23 +3,10 @@ let menu = document.querySelector(".menu");
 let aTags = document.querySelectorAll(".menu a");
 let hiddenButton = document.getElementById("hidden-button");
 
-
-aTags.forEach((one) => {
-    one.addEventListener("click", () => {
-        console.log(one);
-        if (flag === 0) { 
-            document.body.classList.remove("overflow-y-hidden");
-            hiddenButton.classList.add("d-none");
-            menu.style.top = "-100%";
-            flag++;
-        }
-    })
-} )
-
 let flag = 1;
 
 label.addEventListener("click", () => {
-    
+    label.classList.toggle("active");
     if (flag === 1) {
         menu.style.top = 0;
         hiddenButton.classList.remove("d-none");
@@ -32,6 +19,17 @@ label.addEventListener("click", () => {
         document.body.classList.remove("overflow-y-hidden");
         flag++;
     }
+});
+
+aTags.forEach((one) => {
+    one.addEventListener("click", () => {
+        if (flag === 0) {
+            document.body.classList.remove("overflow-y-hidden");
+            hiddenButton.classList.add("d-none");
+            menu.style.top = "-100%";
+            flag++;
+        }
+    });
 });
 
 $('.slider').slick({

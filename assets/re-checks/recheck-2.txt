@@ -1,0 +1,4 @@
+buttons - config(too big),
+vh-100 on image,
+section - top bottom padding should be same,
+<p> tags to cover more space,
