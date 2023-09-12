@@ -303,6 +303,7 @@
 
 .svg-icon {
     width: 5% !important;
+    cursor: pointer;
 }
 
 .hero-image {
@@ -353,7 +354,7 @@
     }
 
     .svg-1 {
-        width: 51% !important;
+        width: 70% !important;
     }
 
     .menu {
@@ -517,6 +518,20 @@
 
 @media (max-width: 576px) {
 
+    #hidden-button{
+        width: 50% !important;
+    }
+
+    .svg-web3-bottom {
+        width: 100% !important;
+        transform: translateX(-64%);
+    }
+
+    .svg-web3-top {
+        width: 100% !important;
+        transform: translateX(-45%);
+    }
+
     .white-ball {
         width: 35% !important;
     }
@@ -598,16 +613,42 @@
         --para-width: 95%;
     }
 
-    .font-size-max-iphone {
-        font-size: 32px;
+        #hidden-button {
+            width: 85% !important;
+        }
+
+    .svg-web3-bottom {
+        top: 85%;
+    }
+
+    .svg-web3-top {
+        bottom: 92%;
+    }
+
+    .hero-button-1 {
+        width: 85% !important;
+        margin-top: 16px !important;
+    }
+
+    .hero-button-2 {
+        width: 85% !important;
+        margin-top: 16px !important;
     }
 
     .section-button-1 {
-        width: 35% !important;
+        width: 85% !important;
     }
 
     .section-button-2 {
-        width: 35% !important;
+        width: 85% !important;
+    }
+
+    .svg-1 {
+        width: 100% !important;
+    }
+
+    .font-size-max-iphone {
+        font-size: 32px;
     }
 }
 
